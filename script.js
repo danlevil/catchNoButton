@@ -1,7 +1,10 @@
 let btn= document.querySelector('#btn1');
-
+let btn2= document.querySelector('#yesButton')
+let state = document.querySelector('.state');
 
 btn.addEventListener('mouseover',movimiento);
+btn.addEventListener('click', toggleTextoNo);
+btn2.addEventListener('click',pintarYesButton);
 
 function movimiento(){
     if(btn.classList.contains('posicion_Normal')){
@@ -23,4 +26,20 @@ function movimiento(){
         btn.classList.replace('move7','posicion_Normal');
     }
     
+}
+function toggleTextoNo() {
+    if (state.innerText === "¡Atrapaste el 'NO'!") {
+        state.innerText = "";
+    } else {
+        state.innerText = "¡Atrapaste el 'NO'!";
+    }
+}
+function pintarYesButton() {
+    if (btn2.classList.contains("desPintado")) {
+        btn2.classList.replace("desPintado", "pintado");
+        state.innerText = "¡Felicidades, has presionado el botón 'Sí'!";
+    } else if (btn2.classList.contains("pintado")) {
+        btn2.classList.replace("pintado", "desPintado");
+        state.innerText = "";
+    }
 }
