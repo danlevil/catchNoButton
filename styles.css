@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.sticky-text {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn1 {
+    background-color: blueviolet;
+    color: white;
+    font-size: 36px;
+}
+
+#yesButton {
+    background-color: rgb(152, 8, 92);
+    color: white;
+    font-size: 36px;
+}
+
+
+#btn1:hover, #yesButton:hover {
+    opacity: 0.8; 
+}
+
+
+.move1{
+    position: absolute;
+    top: 30px;
+    right: 12px;
+}
+.move2{
+    position: absolute;
+    bottom: 20px;
+    right: 19px;
+
+}
+.move3{
+    position: absolute;
+    top:77px;
+    right: 94px;
+}
+.move4{
+    position: absolute;
+    top:317px;
+    right: 154px;
+}
+.move5{
+    position: absolute;
+    bottom: 17px;
+    left: 54px;
+}
+.move6{
+    position: absolute;
+    bottom: 98px;
+    left: 304px;
+
+
+}
+
+.move7{
+    position: absolute;
+    top:217px;
+    right: 154px;
+    left: 34px;
+}
+.move9{
+    position: absolute;
+    bottom: 175px;
+    left: 254px;
+}
